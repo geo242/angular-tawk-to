@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Tawk.to Demo</title>
+
+  <!--lib:css-->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <!--endinject-->
+
+  <!--lib:js-->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <!--endinject-->
+
+  <!--app:js-->
+  <script src="tawkTo.js"></script>
+  <script src="app.js"></script>
+  <!--endinject-->
+</head>
+<body ng-app="tawkToApp" ng-controller="appController as vm">
+<div layout="column" layout-align="start center">
+  <h4 flex>Your Tawk.to ID is {{vm.id || 'Unknown'}}</h4>
+  <div flex>
+    <strong>VISITOR</strong>
+  </div>
+  <pre flex>{{vm.visitor | json}}</pre>
+</div>
+<div layout="row" layout-align="center start">
+  <md-button class="md-primary md-raised" ng-click="vm.toggle()" ng-disabled="!vm.loaded">Toggle</md-button>
+  <md-button class="md-primary md-raised" ng-click="vm.toggleVisibility()" ng-disabled="!vm.loaded">Toggle Visibility</md-button>
+</div>
+<div ng-if="vm.id">
+
+
+  <!-- You either use an interpolated value from the controller, or put the id here directly -->
+  <div tawk-to="{{vm.id}}"></div>
+
+
+
+</div>
+
+</body>
+</html>

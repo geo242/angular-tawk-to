@@ -1,0 +1,18 @@
+{
+  "name": "angular-tawk-to demo",
+  "description": "angular-tawk-to demo application",
+  "authors": [
+    "Geoff Tripoli"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-material": "https://github.com/angular/bower-material.git#1.1.0-rc1"
+  }
+}
