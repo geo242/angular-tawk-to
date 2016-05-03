@@ -46,9 +46,13 @@
       $rootScope.$broadcast('TAWKTO:onOfflineSubmit', data);
     };
 
-    function setVisitor(name, email) {
+    function setVisitor(name, email, hash) {
       if (isLoaded) {
-        return TAWKTO.visitor = { name: name, email: email };
+        if (hash) {
+          return TAWKTO.visitor = { name: name, email: email, hash: hash };
+        } else {
+          return TAWKTO.visitor = { name: name, email: email };
+        }
       }
       return isLoaded;
     }
