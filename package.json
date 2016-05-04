@@ -1,6 +1,6 @@
 {
-  "name": "angular-tawk-to",
-  "version": "0.0.2",
+  "name": "angular-tawk-to-ex",
+  "version": "0.0.3",
   "description": "Angular wrapper for Tawk.to javascript API",
   "main": "index.js",
   "scripts": {
