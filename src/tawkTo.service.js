@@ -5,44 +5,44 @@
     var isLoaded = false;
 
     TAWKTO.onLoad = function () {
-      $log.info('TAWKTO:onLoad');
+      $log.debug('TAWKTO:onLoad');
       $rootScope.$broadcast('TAWKTO:onLoad');
     };
     TAWKTO.onStatusChange = function (status) {
-      $log.info('TAWKTO:Status:' + status);
+      $log.debug('TAWKTO:Status:' + status);
     };
     //function invoked right when Tawk_API is ready to be used and before the widget is rendered.
     TAWKTO.onBeforeLoad = function () {
       isLoaded = true;
-      $log.info('TAWKTO:onBeforeLoad');
+      $log.debug('TAWKTO:onBeforeLoad');
       $rootScope.$broadcast('TAWKTO:onBeforeLoad');
     };
     TAWKTO.onChatMaximized = function () {
-      $log.info('TAWKTO:onChatMaximized');
+      $log.debug('TAWKTO:onChatMaximized');
       $rootScope.$broadcast('TAWKTO:onChatMaximized');
     };
     TAWKTO.onChatMinimized = function () {
-      $log.info('TAWKTO:onChatMinimized');
+      $log.debug('TAWKTO:onChatMinimized');
       $rootScope.$broadcast('TAWKTO:onChatMinimized');
     };
     TAWKTO.onChatHidden = function () {
-      $log.info('TAWKTO:onChatHidden');
+      $log.debug('TAWKTO:onChatHidden');
       $rootScope.$broadcast('TAWKTO:onChatHidden');
     };
     TAWKTO.onChatStarted = function () {
-      $log.info('TAWKTO:onChatStarted');
+      $log.debug('TAWKTO:onChatStarted');
       $rootScope.$broadcast('TAWKTO:onChatStarted');
     };
     TAWKTO.onChatEnded = function () {
-      $log.info('TAWKTO:onChatEnded');
+      $log.debug('TAWKTO:onChatEnded');
       $rootScope.$broadcast('TAWKTO:onChatEnded');
     };
     TAWKTO.onPrechatSubmit = function (data) {
-      $log.info('TAWKTO:onPrechatSubmit:' + data);
+      $log.debug('TAWKTO:onPrechatSubmit:' + data);
       $rootScope.$broadcast('TAWKTO:onPrechatSubmit', data);
     };
     TAWKTO.onOfflineSubmit = function (data) {
-      $log.info('TAWKTO:onOfflineSubmit:' + data);
+      $log.debug('TAWKTO:onOfflineSubmit:' + data);
       $rootScope.$broadcast('TAWKTO:onOfflineSubmit', data);
     };
 
