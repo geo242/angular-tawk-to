@@ -1,12 +1,12 @@
 {
-  "name": "angular-tawk-to",
-  "version": "0.0.1",
+  "name": "angular-tawk-to-ex",
+  "version": "0.0.3",
   "description": "Angular wrapper for Tawk.to javascript API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Geoff Tripoli",
+  "author": "Geoff Tripoli (author), Tam Vo (commiter)",
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.0",

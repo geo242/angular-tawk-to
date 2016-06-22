@@ -1,8 +1,9 @@
 {
-  "name": "angular-tawk-to",
+  "name": "angular-tawk-to-ex",
   "description": "Angular wrapper for Tawk.to javascript API",
   "authors": [
-    "Geoff Tripoli"
+    "Geoff Tripoli (author)",
+    "Tam Vo (commiter)"
   ],
   "license": "MIT",
   "moduleType": [
